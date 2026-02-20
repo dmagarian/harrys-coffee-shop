@@ -408,22 +408,26 @@
     }
 
     .nav-cta {
-      background: var(--red);
+      background: var(--red) !important;
       color: var(--white) !important;
-      padding: 14px 36px;
+      padding: 14px 34px !important;
       margin-left: 0.5rem;
       border-radius: 50px;
       font-weight: 600;
-      font-size: 0.9rem;
+      font-size: 0.82rem;
+      letter-spacing: 0.02em;
       transition: all var(--transition);
       display: inline-block;
+      text-decoration: none;
+      line-height: 1;
+      box-shadow: 0 4px 15px rgba(196, 30, 36, 0.3);
     }
     .nav-cta::after { display: none !important; }
     .nav-cta:hover {
-      background: var(--red-dark);
+      background: var(--red-dark) !important;
       color: var(--white) !important;
-      transform: translateY(-1px);
-      box-shadow: 0 4px 12px rgba(196, 30, 36, 0.3);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(196, 30, 36, 0.35);
     }
 
     /* Hamburger */
@@ -1315,7 +1319,7 @@
         <li role="none"><a href="#menu" role="menuitem">Menu</a></li>
         <li role="none"><a href="#locations" role="menuitem">Locations</a></li>
         <li role="none"><a href="#faq" role="menuitem">FAQ</a></li>
-        <li role="none"><a href="https://www.toasttab.com/harryscoffeeshop" class="btn btn-primary" role="menuitem" target="_blank" rel="noopener">Order Online</a></li>
+        <li role="none"><a href="https://www.toasttab.com/harryscoffeeshop" class="nav-cta" role="menuitem" target="_blank" rel="noopener">Order Online</a></li>
       </ul>
     </div>
   </nav>
