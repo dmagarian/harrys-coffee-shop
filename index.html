@@ -633,6 +633,12 @@
       height: 100%;
     }
 
+    .story-img-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
     .story-year-badge {
       position: absolute;
       bottom: -20px;
@@ -1374,100 +1380,7 @@
         <div class="story-grid">
           <div class="story-visual reveal">
             <div class="story-img-wrapper">
-              <!-- SVG illustration of a retro diner -->
-              <svg class="diner-illustration" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <rect width="800" height="600" fill="#FFF8F0"/>
-                <!-- Counter -->
-                <rect x="50" y="340" width="700" height="30" rx="4" fill="#5D4037"/>
-                <rect x="50" y="360" width="700" height="120" rx="0" fill="#3E2723"/>
-                <!-- Stools -->
-                <g>
-                  <circle cx="150" cy="320" r="22" fill="#C41E24"/>
-                  <rect x="146" y="342" width="8" height="50" fill="#888"/>
-                  <rect x="130" y="390" width="40" height="6" rx="3" fill="#666"/>
-                </g>
-                <g>
-                  <circle cx="300" cy="320" r="22" fill="#C41E24"/>
-                  <rect x="296" y="342" width="8" height="50" fill="#888"/>
-                  <rect x="280" y="390" width="40" height="6" rx="3" fill="#666"/>
-                </g>
-                <g>
-                  <circle cx="450" cy="320" r="22" fill="#C41E24"/>
-                  <rect x="446" y="342" width="8" height="50" fill="#888"/>
-                  <rect x="430" y="390" width="40" height="6" rx="3" fill="#666"/>
-                </g>
-                <g>
-                  <circle cx="600" cy="320" r="22" fill="#C41E24"/>
-                  <rect x="596" y="342" width="8" height="50" fill="#888"/>
-                  <rect x="580" y="390" width="40" height="6" rx="3" fill="#666"/>
-                </g>
-                <!-- Shelves -->
-                <rect x="80" y="120" width="640" height="6" rx="3" fill="#8D6E63"/>
-                <rect x="80" y="200" width="640" height="6" rx="3" fill="#8D6E63"/>
-                <!-- Coffee cups -->
-                <g transform="translate(120, 80)">
-                  <rect x="0" y="15" width="30" height="24" rx="4" fill="#FFF" stroke="#C41E24" stroke-width="2"/>
-                  <path d="M30 20 Q42 20 42 28 Q42 36 30 36" fill="none" stroke="#C41E24" stroke-width="2"/>
-                  <path d="M5 14 Q15 4 25 14" fill="none" stroke="#DDD" stroke-width="1.5"/>
-                </g>
-                <g transform="translate(260, 80)">
-                  <rect x="0" y="15" width="30" height="24" rx="4" fill="#FFF" stroke="#D4A843" stroke-width="2"/>
-                  <path d="M30 20 Q42 20 42 28 Q42 36 30 36" fill="none" stroke="#D4A843" stroke-width="2"/>
-                </g>
-                <g transform="translate(420, 80)">
-                  <rect x="0" y="15" width="30" height="24" rx="4" fill="#FFF" stroke="#C41E24" stroke-width="2"/>
-                  <path d="M30 20 Q42 20 42 28 Q42 36 30 36" fill="none" stroke="#C41E24" stroke-width="2"/>
-                </g>
-                <!-- Plates on shelf 2 -->
-                <ellipse cx="180" cy="196" rx="24" ry="6" fill="#FFF" stroke="#DDD" stroke-width="1"/>
-                <ellipse cx="340" cy="196" rx="24" ry="6" fill="#FFF" stroke="#DDD" stroke-width="1"/>
-                <ellipse cx="500" cy="196" rx="24" ry="6" fill="#FFF" stroke="#DDD" stroke-width="1"/>
-                <!-- Wall art (Norman Rockwell-style frames) -->
-                <rect x="140" y="230" width="60" height="50" rx="3" fill="#FFF" stroke="#8D6E63" stroke-width="2"/>
-                <rect x="145" y="235" width="50" height="40" rx="1" fill="#EFEBE9"/>
-                <rect x="350" y="230" width="60" height="50" rx="3" fill="#FFF" stroke="#8D6E63" stroke-width="2"/>
-                <rect x="355" y="235" width="50" height="40" rx="1" fill="#EFEBE9"/>
-                <rect x="550" y="230" width="60" height="50" rx="3" fill="#FFF" stroke="#8D6E63" stroke-width="2"/>
-                <rect x="555" y="235" width="50" height="40" rx="1" fill="#EFEBE9"/>
-                <!-- Plates on counter -->
-                <ellipse cx="200" cy="336" rx="18" ry="5" fill="#FFF" stroke="#EEE" stroke-width="1"/>
-                <ellipse cx="400" cy="336" rx="18" ry="5" fill="#FFF" stroke="#EEE" stroke-width="1"/>
-                <circle cx="400" cy="330" r="8" fill="#F0D68A"/>
-                <!-- Coffee pot -->
-                <g transform="translate(510, 295)">
-                  <rect x="0" y="12" width="28" height="30" rx="4" fill="#333"/>
-                  <rect x="4" y="8" width="20" height="8" rx="3" fill="#444"/>
-                  <path d="M28 18 Q38 18 38 28 Q38 38 28 38" fill="none" stroke="#333" stroke-width="3"/>
-                  <path d="M8 7 Q14 -2 20 7" fill="none" stroke="#CCC" stroke-width="1.5" opacity="0.6"/>
-                </g>
-                <!-- Floor -->
-                <rect x="0" y="480" width="800" height="120" fill="#EFEBE9"/>
-                <g opacity="0.3">
-                  <rect x="0" y="480" width="40" height="40" fill="#E0E0E0"/>
-                  <rect x="80" y="480" width="40" height="40" fill="#E0E0E0"/>
-                  <rect x="160" y="480" width="40" height="40" fill="#E0E0E0"/>
-                  <rect x="240" y="480" width="40" height="40" fill="#E0E0E0"/>
-                  <rect x="320" y="480" width="40" height="40" fill="#E0E0E0"/>
-                  <rect x="400" y="480" width="40" height="40" fill="#E0E0E0"/>
-                  <rect x="480" y="480" width="40" height="40" fill="#E0E0E0"/>
-                  <rect x="560" y="480" width="40" height="40" fill="#E0E0E0"/>
-                  <rect x="640" y="480" width="40" height="40" fill="#E0E0E0"/>
-                  <rect x="720" y="480" width="40" height="40" fill="#E0E0E0"/>
-                  <rect x="40" y="520" width="40" height="40" fill="#E0E0E0"/>
-                  <rect x="120" y="520" width="40" height="40" fill="#E0E0E0"/>
-                  <rect x="200" y="520" width="40" height="40" fill="#E0E0E0"/>
-                  <rect x="280" y="520" width="40" height="40" fill="#E0E0E0"/>
-                  <rect x="360" y="520" width="40" height="40" fill="#E0E0E0"/>
-                  <rect x="440" y="520" width="40" height="40" fill="#E0E0E0"/>
-                  <rect x="520" y="520" width="40" height="40" fill="#E0E0E0"/>
-                  <rect x="600" y="520" width="40" height="40" fill="#E0E0E0"/>
-                  <rect x="680" y="520" width="40" height="40" fill="#E0E0E0"/>
-                  <rect x="760" y="520" width="40" height="40" fill="#E0E0E0"/>
-                </g>
-                <!-- Neon OPEN sign -->
-                <rect x="340" y="50" width="120" height="40" rx="6" fill="none" stroke="#C41E24" stroke-width="3"/>
-                <text x="400" y="77" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#C41E24">OPEN</text>
-              </svg>
+              <img src="assets/storefront.webp" alt="Harry's Coffee Shop storefront in La Jolla, California" width="800" height="600" loading="lazy">
             </div>
             <div class="story-year-badge" aria-hidden="true">
               <span class="label">Since</span>
